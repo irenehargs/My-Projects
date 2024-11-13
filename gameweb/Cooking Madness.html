@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fish eat Fish</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+          <a class="navbar-brand" href="#">GAME ZONE</a>
+          <button class="navbar-toggler" onclick="toggleNavbar()">☰</button>
+          <div class="navbar-menu" id="navbarMenu">
+              <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="1bootstrap.html">Home</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" onclick="toggleDropdown(event)">Categories</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Adventure</a></li>
+                          <li><a class="dropdown-item" href="#">Shooter</a></li>
+                          <li><a class="dropdown-item" href="#">Strategy</a></li>
+                          <li><a class="dropdown-item" href="#">Racing</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+              </ul>
+              <form class="search-form">
+                  <input type="search" placeholder="Search Games" aria-label="Search">
+                  <button type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <script>
+      function toggleNavbar() {
+          document.getElementById('navbarMenu').classList.toggle('active');
+      }
+
+      function toggleDropdown(event) {
+          event.preventDefault();
+          event.target.nextElementSibling.classList.toggle('show');
+      }
+  </script>
+<br>
+    <h1>
+      Cooking Madness
+    </h1><br>
+    <p style="text-align: center;"><b>Cooking Madeness </b>is an exhilarating culinary adventure where you tap, cook,
+      and serve to keep up with the fast-paced demands of hungry customers.
+      Master the art of multitasking as you whip up delicious dishes, from
+      appetizers to desserts, and race against the clock to deliver perfect
+      meals. With each new level, the challenges intensify, offering fresh
+      recipes, diverse cuisines, and intricate cooking techniques to test your
+      skills. As you progress, unlock exciting upgrades to enhance your kitchen
+      with state-of-the-art equipment, stylish decor, and powerful boosters that
+      help you serve faster and earn higher rewards. Can you rise to the top and
+      become the <i>ultimate chef</i> in Cooking Madness?
+    </p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Row</title>
+</head>
+<body>
+  <div class="image-row">
+    <img src="images/cooking gameplay.png" alt="Cooking Gameplay 1">
+    <img src="images/cooking gmaeplay2.png" alt="Cooking Gameplay 2">
+  </div>
+</body>
+</html>
+
+    <br>
+    <div class="button-container">
+      <button class="custom-button" type="button">PLAY NOW</button>
+    </div>
+  </body>
+</html>

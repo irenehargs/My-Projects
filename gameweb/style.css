@@ -1,0 +1,189 @@
+h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    text-align: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 20px;
+  }
+  
+  .image-row img {
+    width: 500px; 
+    height: 300px; 
+    object-fit: contain;
+  }
+  
+body{
+    background-color: rgb(248, 242, 237);
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row; 
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+    display: block;
+}
+
+.navbar-nav .nav-link.active {
+    color: blueviolet;
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #6c757d;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    padding: 8px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 0 4px 4px 0;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: darkviolet;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+  
+  .custom-button {
+    background-color: #dc3545; /* Bootstrap's danger color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+  }
